@@ -24,3 +24,27 @@
 @import "@ionic/angular/css/text-alignment.css";
 @import "@ionic/angular/css/text-transformation.css";
 @import "@ionic/angular/css/flex-utils.css";
+
+ion-header{
+    min-height: 56px;
+    background-image: url(./assets/img/header.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
+ion-text{
+    color: #000000;
+    font-size: 1.1rem;
+}
+
+
+ion-content {
+    // --background: rgb(151, 139, 138);
+    --background: linear-gradient(to bottom, #b7d6b0, #7a885f);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6290c', endColorstr='#f16f5c', GradientType=0 );
+}
+
