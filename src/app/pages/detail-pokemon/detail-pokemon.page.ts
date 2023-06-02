@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { NavController, NavParams } from '@ionic/angular';
+import { Pokemons } from 'src/app/models/pokemons';
 
 
 
@@ -9,13 +11,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DetailPokemonPage implements OnInit {
 
-  
+  public pokemom:any;
 
-  constructor() { }
+  constructor(private navParams:NavParams,private navController:NavController) {
+    this.pokemom = this.navParams.data;
+    console.log(this.pokemom);
+   }
 
   ngOnInit() {
-    
+
   }
 
+  goToHome(){
+    this.navController.pop();
+  }
 
 }

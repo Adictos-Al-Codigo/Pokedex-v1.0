@@ -13,7 +13,7 @@ export class ListPokemonsPage implements OnInit {
 
   public pokemons!: Pokemons[];
 
-  constructor(private ps:PokemonService, private loadingController:LoadingController, private navController:NavController, navParams:NavParams) { 
+  constructor(private ps:PokemonService, private loadingController:LoadingController, private navController:NavController, private navParams:NavParams) { 
     this.pokemons = [];
   }
 
@@ -48,6 +48,11 @@ export class ListPokemonsPage implements OnInit {
         }
       });
     }
+  }
+
+  goTodetails(pokemon:any){
+    this.navParams.data['pokemon'] = pokemon;
+    this.navController.navigateForward('detail-pokemon')
   }
 
 }
