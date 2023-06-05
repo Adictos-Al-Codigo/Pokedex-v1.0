@@ -6,3 +6,16 @@ ion-list{
     background: transparent;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+
+ion-footer{
+    background-color: rgb(226, 183, 43);
+    font-family: 'Press Start 2P', cursive;
+    font-size: 9px;
+    height: 15px;
+    padding: 10px;
+}
+
+ion-footer span{
+    position: relative;
+    top: -5px;
+}

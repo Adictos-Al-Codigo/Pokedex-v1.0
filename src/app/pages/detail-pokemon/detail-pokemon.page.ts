@@ -15,7 +15,6 @@ export class DetailPokemonPage implements OnInit {
 
   constructor(private navParams:NavParams,private navController:NavController) {
     this.pokemom = this.navParams.data;
-    console.log(this.pokemom);
    }
 
   ngOnInit() {

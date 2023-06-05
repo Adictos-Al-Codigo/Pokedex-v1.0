@@ -28,11 +28,13 @@ export class ListPokemonsPage implements OnInit {
       if (!$event) {
         const loading = await this.loadingController.create({
           message: 'Cargando',
-          duration: 0.5,
+          duration: 3000,
         });
     
         loading.present(); 
       }
+
+      
 
 
       promise.then( (result:Pokemons[]) =>{
@@ -54,5 +56,6 @@ export class ListPokemonsPage implements OnInit {
     this.navParams.data['pokemon'] = pokemon;
     this.navController.navigateForward('detail-pokemon')
   }
+  
 
 }
