@@ -2,6 +2,35 @@
     color: rgb(0, 0, 0);
 }
 
-ion-text{
+.text_principal{
     font-family: 'VT323', monospace;
+    font-size: 1.5rem;
+}
+
+.titulo_secundario{
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+    font-size: 18px;
+}
+
+.t-1{
+    color: rgb(96, 96, 96);
+}
+
+.t-2{
+    color: rgb(0, 0, 255);
+}
+
+.t-3{
+    color: rgb(255, 0, 0);
+}
+
+.titulo-tercero{
+    font-family: 'Odibee Sans', cursive;
+    font-size: 25px;
+}
+
+.text_resultado{
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+    font: 20px;
+    color: rgb(72, 72, 72);
 }

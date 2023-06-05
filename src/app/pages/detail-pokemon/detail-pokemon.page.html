@@ -13,7 +13,7 @@
       <ion-grid>
         <ion-row>
           <ion-col size="4" class="ion-text-center">
-            <ion-text>Tipo</ion-text>
+            <ion-text class="text_principal">Tipo</ion-text>
           </ion-col>
           <ion-col size="4">
             <ion-img [src]="'assets/img/' + pokemom.pokemon.type1 + '.gif'"></ion-img>
@@ -24,71 +24,71 @@
         </ion-row>
         <ion-row>
           <ion-col size="4" class="ion-text-center">
-            <ion-text>Habilidad</ion-text>
+            <ion-text class="text_principal">Habilidad</ion-text>
           </ion-col>
           <ion-col size="8" class="ion-text-center">
             <ng-container *ngFor="let item of pokemom.pokemon.abilities">
-              <ion-text>{{item.ability.name}}</ion-text>
+              <ion-text class="titulo_secundario t-1">{{item.ability.name}}</ion-text>
               <br>
             </ng-container>
           </ion-col>
         </ion-row>
         <ion-row>
           <ion-col size="4" class="ion-text-center">
-            <ion-text>Peso</ion-text>
+            <ion-text class="text_principal">Peso</ion-text>
           </ion-col>
           <ion-col size="8" class="ion-text-center">
-            <ion-text>{{pokemom.pokemon.peso/10 + ' kg'}}</ion-text>
+            <ion-text class="titulo_secundario t-2">{{pokemom.pokemon.peso/10 + ' kg'}}</ion-text>
           </ion-col>
         </ion-row>
         <ion-row>
           <ion-col size="4" class="ion-text-center">
-            <ion-text>Altura</ion-text>
+            <ion-text class="text_principal">Altura</ion-text>
           </ion-col>
           <ion-col size="8" class="ion-text-center">
-            <ion-text>{{pokemom.pokemon.height/10 + ' m'}}</ion-text>
+            <ion-text class="titulo_secundario t-3">{{pokemom.pokemon.height/10 + ' m'}}</ion-text>
           </ion-col>
         </ion-row>
 
         <ion-row>
           <ion-col size="12" class="ion-text-center">
-            <ion-text>Estadisticas Bases</ion-text>
+            <ion-text class="titulo-tercero">Estadisticas Bases</ion-text>
           </ion-col>
         </ion-row>
 
         <ion-row>
           <ion-col size="12" class="ion-text-center">
-            <ion-text>{{pokemom.pokemon.stats[0].base_stat + ' ' + pokemom.pokemon.stats[0].stat.name}}</ion-text>
+            <ion-text class="text_resultado">{{pokemom.pokemon.stats[0].base_stat + ' ' + pokemom.pokemon.stats[0].stat.name}}</ion-text>
           </ion-col>
         </ion-row>
 
         <ion-row>
           <ion-col size="12" class="ion-text-center">
-            <ion-text>{{pokemom.pokemon.stats[1].base_stat + ' ' + pokemom.pokemon.stats[1].stat.name}}</ion-text>
+            <ion-text class="text_resultado">{{pokemom.pokemon.stats[1].base_stat + ' ' + pokemom.pokemon.stats[1].stat.name}}</ion-text>
           </ion-col>
         </ion-row>
 
         <ion-row>
           <ion-col size="12" class="ion-text-center">
-            <ion-text>{{pokemom.pokemon.stats[2].base_stat + ' ' + pokemom.pokemon.stats[2].stat.name}}</ion-text>
+            <ion-text class="text_resultado">{{pokemom.pokemon.stats[2].base_stat + ' ' + pokemom.pokemon.stats[2].stat.name}}</ion-text>
           </ion-col>
         </ion-row>
 
         <ion-row>
           <ion-col size="12" class="ion-text-center">
-            <ion-text>{{pokemom.pokemon.stats[3].base_stat + ' ' + pokemom.pokemon.stats[3].stat.name}}</ion-text>
+            <ion-text class="text_resultado">{{pokemom.pokemon.stats[3].base_stat + ' ' + pokemom.pokemon.stats[3].stat.name}}</ion-text>
           </ion-col>
         </ion-row>
 
         <ion-row>
           <ion-col size="12" class="ion-text-center">
-            <ion-text>{{pokemom.pokemon.stats[4].base_stat + ' ' + pokemom.pokemon.stats[4].stat.name}}</ion-text>
+            <ion-text class="text_resultado">{{pokemom.pokemon.stats[4].base_stat + ' ' + pokemom.pokemon.stats[4].stat.name}}</ion-text>
           </ion-col>
         </ion-row>
 
         <ion-row>
           <ion-col size="12" class="ion-text-center">
-            <ion-text>{{pokemom.pokemon.stats[5].base_stat + ' ' + pokemom.pokemon.stats[5].stat.name}}</ion-text>
+            <ion-text class="text_resultado">{{pokemom.pokemon.stats[5].base_stat + ' ' + pokemom.pokemon.stats[5].stat.name}}</ion-text>
           </ion-col>
         </ion-row>
       </ion-grid>
